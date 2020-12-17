@@ -2,7 +2,7 @@
 
 ## Original Design
 
-![creative agency design](https://res.cloudinary.com/dz209s6jk/image/upload/v1599153645/Challenges/aimbdihdav0vuv0apny9.jpg)
+![creative agency design](https://res.cloudinary.com/dz209s6jk/image/upload/v1599153644/Challenges/zvkqvpshdas9rtdkubkx.jpg)
 
 ## Build Setup
 
