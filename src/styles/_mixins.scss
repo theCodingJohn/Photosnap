@@ -17,11 +17,11 @@
   height: 2px;
   bottom: -4px;
   left: 50%;
-  background-color: $color;
+  background: $color;
   transition: all $speed ease;
 }
 
-@mixin underlineHover {
-  width: 100%;
-  left: 0;
+@mixin underlineHover($width: 100%, $left: 0) {
+  width: $width;
+  left: $left;
 }

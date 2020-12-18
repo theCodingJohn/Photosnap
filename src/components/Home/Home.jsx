@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Nav from '../Nav/Nav';
 
 function Home() {
   return (
+    <>
+    <Nav list={{stories: 'stories', features: 'features', pricing: 'pricing'}}/>
     <main>
       <section className="hero hero-1">
         <div className="hero-image hero-image-1"></div>
@@ -28,6 +31,7 @@ function Home() {
         </div>
       </section>
     </main>
+    </>
   )
 }
 
