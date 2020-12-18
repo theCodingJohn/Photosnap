@@ -216,6 +216,7 @@ li:hover a::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
   width: 100%;
   height: 40px;
   color: #fff;
@@ -430,6 +431,7 @@ li:hover a::after {
 }
 
 .hero-desc-wrapper-1 {
+  position: relative;
   background-color: #000;
   text-align: justify;
   color: #fff;
@@ -449,6 +451,15 @@ li:hover a::after {
 
 .hero-desc-wrapper-1 a::after {
   background: url(/src/assets/shared/desktop/arrow-white.svg);
+}
+
+.hero-desc-wrapper-1::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 6px;
+  background: linear-gradient(26.57deg, #ffc593 0.42%, #bc7198 43.46%, #5a77ff 83.33%);
+  top: 0;
 }
 
 .hero-desc-wrapper-2 a {
@@ -511,6 +522,12 @@ li:hover a::after {
   }
   .hero-desc-wrapper p {
     margin: 21px 0 48px 0;
+  }
+  .hero-desc-wrapper-1::after {
+    top: 28%;
+    left: 0;
+    width: 6px;
+    height: 304px;
   }
   .hero-desc-wrapper-1,
   .hero-desc-wrapper-3 {
