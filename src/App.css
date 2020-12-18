@@ -565,4 +565,10 @@ li:hover a::after {
     background-size: cover;
   }
 }
+
+@media only screen and (min-device-width: 993px) and (max-device-width: 1168px) {
+  .hero-desc-wrapper {
+    padding: 0 45px;
+  }
+}
 /*# sourceMappingURL=App.css.map */
