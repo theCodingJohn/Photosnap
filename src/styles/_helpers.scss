@@ -3,14 +3,24 @@
   padding: 0 24px;
 }
 
+.nav-container {
+  @extend .container;
+}
+
 @media (min-width: 768px) {
   .container {
     padding: 0 65px;
+  }
+  .nav-container {
+    padding: 0 50px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
     padding: 0 80px;
+  }
+  .nav-container {
+    padding: 0 155px;
   }
 }
