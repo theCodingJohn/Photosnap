@@ -9,3 +9,19 @@
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin underline($color: $black) {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: $color;
+  transition: all $speed ease;
+}
+
+@mixin underlineHover {
+  width: 100%;
+  left: 0;
+}
