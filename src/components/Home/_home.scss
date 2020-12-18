@@ -56,6 +56,7 @@
 }
 
 .hero-desc-wrapper-1 {
+  position: relative;
   background-color: $black;
   text-align: justify;
   color: $white;
@@ -70,6 +71,14 @@
     &::after {
       background: url(/src/assets/shared/desktop/arrow-white.svg);
     }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 6px;
+    background: $primary-color;
+    top: 0;
   }
 }
 
@@ -136,6 +145,15 @@
     height: 100%;
     p {
       margin: 21px 0 48px 0;
+    }
+  }
+
+  .hero-desc-wrapper-1 {
+    &::after {
+      top: 28%;
+      left: 0;
+      width: 6px;
+      height: 304px;
     }
   }
 
