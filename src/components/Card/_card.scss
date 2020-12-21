@@ -1,0 +1,108 @@
+.card {
+  @include flex($justify: flex-end);
+  position: relative;
+  color: $white;
+  width: 100%;
+  height: 375px;
+  transition: all $speed;
+  h3 + p {
+    font-size: 13px;
+    margin: 1px 0 12px 0;
+  }
+  &::after {
+    @include underline($color: $primary-color);
+    height: 6px;
+    bottom: 0;
+    left: 0;
+  }
+  &:hover {
+    transform: translateY(-30px);
+    transition: all $speed;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.desc-wrapper {
+  max-width: 77%;
+  width: 100%;
+  margin: 0 auto 30px auto;
+  .card-button-wrapper {
+    position: relative;
+    margin-top: 10px;
+    &::after {
+      content: "";
+      top: 2px;
+      width: 42px;
+      height: 14px;
+      position: absolute;
+      right: 0;
+      background: url(/src/assets/shared/desktop/arrow-white.svg);
+    }
+    &:hover::after {
+      transform: translateX(-15px);
+      transition: transform $speed ease;
+    }
+  }
+  .line {
+    background-color: rgba($color: $white, $alpha: 0.7);
+  }
+  .arrow {
+    color: $white;
+    &::before {
+      background: $white;
+    }
+  }
+}
+
+.home-card-1 {
+  background: url(/src/assets/stories/mobile/mountains.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.home-card-2 {
+  background: url(/src/assets/stories/mobile/cityscapes.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.home-card-3 {
+  background: url(/src/assets/stories/mobile/18-days-voyage.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+
+.home-card-4 {
+  background: url(/src/assets/stories/mobile/architecturals.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 100%;
+    height: 500px;
+  }
+
+  .home-card-1 {
+    background: url(/src/assets/stories/desktop/mountains.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .home-card-2 {
+    background: url(/src/assets/stories/desktop/cityscapes.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .home-card-3 {
+    background: url(/src/assets/stories/desktop/18-days-voyage.jpg) no-repeat
+      center;
+    background-size: cover;
+  }
+
+  .home-card-4 {
+    background: url(/src/assets/stories/desktop/architecturals.jpg) no-repeat
+      center;
+    background-size: cover;
+  }
+}

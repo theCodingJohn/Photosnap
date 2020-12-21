@@ -30,28 +30,29 @@
     opacity: 0.6;
     margin: 12px 0 24px 0;
   }
-  a {
-    position: relative;
-    text-decoration: none;
-    &::before {
-      @include underline();
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      top: 2px;
-      width: 42px;
-      height: 14px;
-      margin-left: 25px;
-      transition: transform $speed ease;
-    }
-    &:hover::before {
-      @include underlineHover();
-    }
-    &:hover::after {
-      transform: translateX(-15px);
-      transition: transform $speed ease;
-    }
+}
+
+.arrow {
+  position: relative;
+  text-decoration: none;
+  &::before {
+    @include underline();
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    width: 42px;
+    height: 14px;
+    margin-left: 25px;
+    transition: transform $speed ease;
+  }
+  &:hover::before {
+    @include underlineHover();
+  }
+  &:hover::after {
+    transform: translateX(-15px);
+    transition: transform $speed ease;
   }
 }
 
@@ -63,7 +64,7 @@
   p {
     color: $gray;
   }
-  a {
+  .arrow {
     color: $white;
     &::before {
       background-color: $white;
@@ -83,7 +84,7 @@
 }
 
 .hero-desc-wrapper-2 {
-  a {
+  .arrow {
     color: $black;
     &::after {
       background: url(/src/assets/shared/desktop/arrow.svg);
@@ -165,6 +166,11 @@
   .hero-desc-wrapper-2 {
     order: 2;
   }
+
+  .home-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 992px) {
@@ -194,11 +200,17 @@
       no-repeat center;
     background-size: cover;
   }
+  .home-card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 // For ipads
 @media only screen and (min-device-width: 993px) and (max-device-width: 1168px) {
   .hero-desc-wrapper {
     padding: 0 45px;
+  }
+  .home-card-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
