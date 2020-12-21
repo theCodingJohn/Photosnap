@@ -165,8 +165,7 @@ header {
           align-items: center;
 }
 
-.nav-links-mobile-wrapper .line {
-  cursor: auto;
+.line {
   height: 1px;
   width: 100%;
   background-color: #dfdfdf;
@@ -386,12 +385,12 @@ li:hover a::after {
   margin: 12px 0 24px 0;
 }
 
-.hero-desc-wrapper a {
+.arrow {
   position: relative;
   text-decoration: none;
 }
 
-.hero-desc-wrapper a::before {
+.arrow::before {
   content: "";
   position: absolute;
   width: 0;
@@ -403,7 +402,7 @@ li:hover a::after {
   transition: all 350ms ease;
 }
 
-.hero-desc-wrapper a::after {
+.arrow::after {
   content: "";
   position: absolute;
   top: 2px;
@@ -416,12 +415,12 @@ li:hover a::after {
   transition: transform 350ms ease, -webkit-transform 350ms ease;
 }
 
-.hero-desc-wrapper a:hover::before {
+.arrow:hover::before {
   width: 100%;
   left: 0;
 }
 
-.hero-desc-wrapper a:hover::after {
+.arrow:hover::after {
   -webkit-transform: translateX(-15px);
           transform: translateX(-15px);
   -webkit-transition: -webkit-transform 350ms ease;
@@ -441,15 +440,15 @@ li:hover a::after {
   color: #dfdfdf;
 }
 
-.hero-desc-wrapper-1 a {
+.hero-desc-wrapper-1 .arrow {
   color: #fff;
 }
 
-.hero-desc-wrapper-1 a::before {
+.hero-desc-wrapper-1 .arrow::before {
   background-color: #fff;
 }
 
-.hero-desc-wrapper-1 a::after {
+.hero-desc-wrapper-1 .arrow::after {
   background: url(/src/assets/shared/desktop/arrow-white.svg);
 }
 
@@ -462,11 +461,11 @@ li:hover a::after {
   top: 0;
 }
 
-.hero-desc-wrapper-2 a {
+.hero-desc-wrapper-2 .arrow {
   color: #000;
 }
 
-.hero-desc-wrapper-2 a::after {
+.hero-desc-wrapper-2 .arrow::after {
   background: url(/src/assets/shared/desktop/arrow.svg);
 }
 
@@ -540,6 +539,12 @@ li:hover a::after {
         -ms-flex-order: 2;
             order: 2;
   }
+  .home-card-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 992px) {
@@ -564,11 +569,157 @@ li:hover a::after {
     background: url(/src/assets/home/desktop/designed-for-everyone.jpg) no-repeat center;
     background-size: cover;
   }
+  .home-card-container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media only screen and (min-device-width: 993px) and (max-device-width: 1168px) {
   .hero-desc-wrapper {
     padding: 0 45px;
+  }
+  .home-card-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  color: #fff;
+  width: 100%;
+  height: 375px;
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+}
+
+.card h3 + p {
+  font-size: 13px;
+  margin: 1px 0 12px 0;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background: linear-gradient(26.57deg, #ffc593 0.42%, #bc7198 43.46%, #5a77ff 83.33%);
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  height: 6px;
+  bottom: 0;
+  left: 0;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+}
+
+.card:hover::after {
+  width: 100%;
+}
+
+.desc-wrapper {
+  max-width: 77%;
+  width: 100%;
+  margin: 0 auto 30px auto;
+}
+
+.desc-wrapper .card-button-wrapper {
+  position: relative;
+  margin-top: 10px;
+}
+
+.desc-wrapper .card-button-wrapper::after {
+  content: "";
+  top: 2px;
+  width: 42px;
+  height: 14px;
+  position: absolute;
+  right: 0;
+  background: url(/src/assets/shared/desktop/arrow-white.svg);
+}
+
+.desc-wrapper .card-button-wrapper:hover::after {
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+  -webkit-transition: -webkit-transform 350ms ease;
+  transition: -webkit-transform 350ms ease;
+  transition: transform 350ms ease;
+  transition: transform 350ms ease, -webkit-transform 350ms ease;
+}
+
+.desc-wrapper .line {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.desc-wrapper .arrow {
+  color: #fff;
+}
+
+.desc-wrapper .arrow::before {
+  background: #fff;
+}
+
+.home-card-1 {
+  background: url(/src/assets/stories/mobile/mountains.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.home-card-2 {
+  background: url(/src/assets/stories/mobile/cityscapes.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.home-card-3 {
+  background: url(/src/assets/stories/mobile/18-days-voyage.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.home-card-4 {
+  background: url(/src/assets/stories/mobile/architecturals.jpg) no-repeat center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 100%;
+    height: 500px;
+  }
+  .home-card-1 {
+    background: url(/src/assets/stories/desktop/mountains.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .home-card-2 {
+    background: url(/src/assets/stories/desktop/cityscapes.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .home-card-3 {
+    background: url(/src/assets/stories/desktop/18-days-voyage.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .home-card-4 {
+    background: url(/src/assets/stories/desktop/architecturals.jpg) no-repeat center;
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=App.css.map */

@@ -26,7 +26,7 @@ function Nav({list}) {
         <li><a href={`/${list.stories}`}>{ list.stories }</a></li>
         <li><a href={`/${list.features}`}>{ list.features }</a></li>
         <li><a href={`/${list.pricing}`}>{ list.pricing }</a></li>
-        <li className="line"></li>
+        <span className="line"></span>
         <li className="invite-button"><a>GET AN INVITE</a></li>
       </ul>
     </header>

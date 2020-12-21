@@ -52,12 +52,12 @@ header {
   z-index: -1;
   background-color: $white;
   @include flex($justify: flex-start, $align: center);
-  .line {
-    cursor: auto;
-    height: 1px;
-    width: 100%;
-    background-color: $gray;
-  }
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: $gray;
 }
 
 li {
