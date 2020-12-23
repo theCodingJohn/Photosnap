@@ -635,7 +635,11 @@ li:hover a::after {
   text-shadow: 1px 1px 5px #000;
 }
 
-.card h3 + p {
+.card .card-date {
+  margin: 0 0 2px 0;
+}
+
+.card p {
   font-size: 13px;
   margin: 1px 0 12px 0;
 }
