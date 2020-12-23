@@ -1,6 +1,12 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
 import Card from "../Card/Card";
+import FeatureCard from "../FeatureCard/FeatureCard";
+
+// images
+import responsive from "../../assets/features/desktop/responsive.svg";
+import noLimit from "../../assets/features/desktop/no-limit.svg";
+import embed from "../../assets/features/desktop/embed.svg";
 
 function Home() {
   return (
@@ -36,6 +42,11 @@ function Home() {
           <Card card={ {id: 2,name: "Sunset Cityscapes", author: "Benjamin Cruz", page: "home"}}/>
           <Card card={ {id: 3,name: "18 Days Voyage", author: "Alexei Borodin", page: "home"}}/>
           <Card card={ {id: 4,name: "Architecturals", author: "Samantha Brooke", page: "home"}}/>
+        </section>
+        <section className="container home-feature-card-container">
+          <FeatureCard card={{ id: 1, title: '100% Responsive', desc: "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.", img: `${responsive}`, alt: "different type of devices " }} />
+          <FeatureCard card={{ id: 2, title: 'No Photo Upload Limit', desc: "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.", img: `${noLimit}`, alt: "infinity icon" }} />
+          <FeatureCard card={{ id: 3, title: 'Available to Embed', desc: "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.", img: `${embed}`, alt: "a bunch of social media icon"}} />
         </section>
     </main>
     </>

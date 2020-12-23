@@ -1,0 +1,19 @@
+.feature-card {
+  @include flex($align: center, $justify: flex-end);
+  width: 100%;
+  max-width: 457px;
+  height: 235px;
+  text-align: center;
+  h3 {
+    margin: 40px 0 20px 0;
+  }
+  p {
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: 992px) {
+  .feature-card {
+    max-width: 345px;
+  }
+}
