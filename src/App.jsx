@@ -6,16 +6,20 @@ import {
   Route
 } from "react-router-dom";
 import Home from "./components/Home/Home";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home}>
-        </Route>
+    <>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home}>
+          </Route>
       </Switch>
-    </Router>
+      </Router>
+      <Footer />
+    </>
   );
 }
 

@@ -1,0 +1,176 @@
+.main-footer {
+  @include flex($flow: column, $align: center, $justify: center);
+  background: $black;
+  height: 539px;
+  padding: 40px;
+  color: $white;
+  text-align: center;
+  a {
+    color: inherit;
+    font-size: 12px;
+  }
+  .footer-logo {
+    margin: auto auto 0 auto;
+  }
+  .arrow {
+    margin: 0 auto 30px auto;
+    padding-right: 60px;
+    &::before {
+      background: none;
+    }
+    &::after {
+      background: url(/src/assets/shared/desktop/arrow-white.svg);
+      margin-right: 25px;
+    }
+  }
+  p {
+    margin: 0 auto auto auto;
+    opacity: 0.6;
+  }
+}
+
+.social-links-wrapper {
+  @include flex($flow: row, $align: center, $justify: space-between);
+  margin: 30px auto 40px auto;
+  width: 170px;
+  height: 21px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: auto auto 0 auto;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.social-icon-facebook {
+  background: url(/src/assets/shared/desktop/facebook-white.svg) no-repeat
+    center;
+  background-size: cover;
+  transition: background $speed;
+  &:hover {
+    background: url(/src/assets/shared/desktop/facebook-color.svg) no-repeat
+      center;
+    transition: background $speed;
+  }
+}
+
+.social-icon-youtube {
+  background: url(/src/assets/shared/desktop/youtube-white.svg) no-repeat center;
+  transition: background $speed;
+  &:hover {
+    background: url(/src/assets/shared/desktop/youtube-color.svg) no-repeat
+      center;
+    background-size: cover;
+    transition: background $speed;
+  }
+}
+
+.social-icon-twitter {
+  background: url(/src/assets/shared/desktop/twitter-white.svg) no-repeat center;
+  background-size: cover;
+  transition: background $speed;
+  &:hover {
+    background: url(/src/assets/shared/desktop/twitter-color.svg) no-repeat
+      center;
+    background-size: cover;
+    transition: background $speed;
+  }
+}
+
+.social-icon-pinterest {
+  background: url(/src/assets/shared/desktop/pinterest-white.svg) no-repeat
+    center;
+  background-size: cover;
+  transition: background $speed;
+  &:hover {
+    background: url(/src/assets/shared/desktop/pinterest-color.svg) no-repeat
+      center;
+    background-size: cover;
+    transition: background $speed;
+  }
+}
+
+.social-icon-instagram {
+  background: url(/src/assets/shared/desktop/insta-white.svg) no-repeat center;
+  background-size: cover;
+  transition: background $speed;
+  &:hover {
+    background: url(/src/assets/shared/desktop/insta-color.svg) no-repeat center;
+    background-size: cover;
+    transition: background $speed;
+  }
+}
+
+.footer-links-wrapper {
+  margin: 0 auto auto auto;
+}
+
+@media (min-width: 768px) {
+  .main-footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 284px;
+    .footer-logo {
+      grid-row: 1 / span 1;
+      margin: 0;
+    }
+    .arrow {
+      text-align: right;
+      margin: 0 67px 0 0;
+      padding: 0;
+      grid-column: 4 / span 2;
+    }
+    p {
+      text-align: right;
+      margin: 0;
+      grid-row: 3 / span 1;
+      grid-column: 3 / span 3;
+    }
+  }
+  .social-links-wrapper {
+    margin: 0;
+    grid-row: 3 / span 1;
+  }
+  .social-icon {
+    margin-left: 0;
+  }
+  .footer-links-wrapper {
+    @include flex($flow: row, $align: flex-start, $justify: flex-start);
+    margin: 0;
+    li {
+      margin-left: 0;
+    }
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-footer {
+    padding: 40px 155px;
+    height: 250px;
+  }
+  .footer-links-wrapper {
+    @include flex($justify: space-around);
+    margin-left: 52px;
+    padding: 10px 0;
+    height: 100%;
+    grid-row: 1 / span 3;
+    grid-column: 2 / span 1;
+  }
+}
+
+@media only screen and (min-device-width: 993px) and (max-device-width: 1168px) {
+  .footer-links-wrapper {
+    @include flex($flow: row, $align: flex-start, $justify: flex-start);
+    margin: 0;
+    li {
+      margin-left: 0;
+    }
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+  }
+}
