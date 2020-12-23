@@ -556,7 +556,7 @@ li:hover a::after {
         -ms-flex-order: 2;
             order: 2;
   }
-  .home-card-container {
+  .card-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -586,7 +586,7 @@ li:hover a::after {
     background: url(/src/assets/home/desktop/designed-for-everyone.jpg) no-repeat center;
     background-size: cover;
   }
-  .home-card-container {
+  .card-container {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
@@ -601,7 +601,7 @@ li:hover a::after {
   .hero-desc-wrapper {
     padding: 0 45px;
   }
-  .home-card-container {
+  .card-container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
@@ -712,23 +712,83 @@ li:hover a::after {
   background: #fff;
 }
 
-.home-card-1 {
+.card-1 {
   background: url(/src/assets/stories/mobile/mountains.jpg) no-repeat center;
   background-size: cover;
 }
 
-.home-card-2 {
+.card-2 {
   background: url(/src/assets/stories/mobile/cityscapes.jpg) no-repeat center;
   background-size: cover;
 }
 
-.home-card-3 {
+.card-3 {
   background: url(/src/assets/stories/mobile/18-days-voyage.jpg) no-repeat center;
   background-size: cover;
 }
 
-.home-card-4 {
+.card-4 {
   background: url(/src/assets/stories/mobile/architecturals.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card-5 {
+  background: url(/src/assets/stories/mobile/world-tour.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card-6 {
+  background: url(/src/assets/stories/mobile/unforeseen-corners.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card-7 {
+  background: url(/src/assets/stories/mobile/king-on-africa.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card-8 {
+  background: url(/src/assets/stories/mobile/trip-to-nowhere.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card-9 {
+  background: url(/src/assets/stories/mobile/rage-of-the-sea.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card-10 {
+  background: url(/src/assets/stories/mobile/running-free.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card-11 {
+  background: url(/src/assets/stories/mobile/behind-the-waves.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card-12 {
+  background: url(/src/assets/stories/mobile/calm-waters.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card-13 {
+  background: url(/src/assets/stories/mobile/milky-way.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card-14 {
+  background: url(/src/assets/stories/mobile/dark-forest.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card-15 {
+  background: url(/src/assets/stories/mobile/somwarpet.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.card-16 {
+  background: url(/src/assets/stories/mobile/land-of-dreams.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -737,20 +797,68 @@ li:hover a::after {
     width: 100%;
     height: 500px;
   }
-  .home-card-1 {
+  .card-1 {
     background: url(/src/assets/stories/desktop/mountains.jpg) no-repeat center;
     background-size: cover;
   }
-  .home-card-2 {
+  .card-2 {
     background: url(/src/assets/stories/desktop/cityscapes.jpg) no-repeat center;
     background-size: cover;
   }
-  .home-card-3 {
+  .card-3 {
     background: url(/src/assets/stories/desktop/18-days-voyage.jpg) no-repeat center;
     background-size: cover;
   }
-  .home-card-4 {
+  .card-4 {
     background: url(/src/assets/stories/desktop/architecturals.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .card-5 {
+    background: url(/src/assets/stories/desktop/world-tour.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .card-6 {
+    background: url(/src/assets/stories/desktop/unforeseen-corners.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .card-7 {
+    background: url(/src/assets/stories/desktop/king-on-africa.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .card-8 {
+    background: url(/src/assets/stories/desktop/trip-to-nowhere.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .card-9 {
+    background: url(/src/assets/stories/desktop/rage-of-the-sea.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .card-10 {
+    background: url(/src/assets/stories/desktop/running-free.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .card-11 {
+    background: url(/src/assets/stories/desktop/behind-the-waves.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .card-12 {
+    background: url(/src/assets/stories/desktop/calm-waters.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .card-13 {
+    background: url(/src/assets/stories/desktop/milky-way.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .card-14 {
+    background: url(/src/assets/stories/desktop/dark-forest.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .card-15 {
+    background: url(/src/assets/stories/desktop/somwarpet.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .card-16 {
+    background: url(/src/assets/stories/desktop/land-of-dreams.jpg) no-repeat center;
     background-size: cover;
   }
 }

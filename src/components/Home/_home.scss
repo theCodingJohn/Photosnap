@@ -175,7 +175,7 @@
     order: 2;
   }
 
-  .home-card-container {
+  .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -208,7 +208,7 @@
       no-repeat center;
     background-size: cover;
   }
-  .home-card-container {
+  .card-container {
     grid-template-columns: repeat(4, 1fr);
   }
   .home-feature-card-container {
@@ -222,7 +222,7 @@
   .hero-desc-wrapper {
     padding: 0 45px;
   }
-  .home-card-container {
+  .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
   .home-feature-card-container {

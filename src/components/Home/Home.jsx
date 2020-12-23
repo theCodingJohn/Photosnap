@@ -11,7 +11,7 @@ import embed from "../../assets/features/desktop/embed.svg";
 function Home() {
   return (
     <>
-    <Nav list={{stories: 'stories', features: 'features', pricing: 'pricing'}}/>
+    <Nav list={{firstLink: 'stories', secondLink: 'features', thirdLink: 'pricing'}}/>
     <main>
       <section className="hero hero-1">
         <div className="hero-image hero-image-1"></div>
@@ -37,11 +37,11 @@ function Home() {
             <a className="arrow" href="/">VIEW THE STORIES</a>
         </div>
         </section>
-        <section className="home-card-container">
-          <Card card={ {id: 1,name: "The Mountains", author: "John Appleseed", page: "home"}}/>
-          <Card card={ {id: 2,name: "Sunset Cityscapes", author: "Benjamin Cruz", page: "home"}}/>
-          <Card card={ {id: 3,name: "18 Days Voyage", author: "Alexei Borodin", page: "home"}}/>
-          <Card card={ {id: 4,name: "Architecturals", author: "Samantha Brooke", page: "home"}}/>
+        <section className="card-container">
+          <Card card={ {id: 1,name: "The Mountains", author: "John Appleseed"}}/>
+          <Card card={ {id: 2,name: "Sunset Cityscapes", author: "Benjamin Cruz"}}/>
+          <Card card={ {id: 3,name: "18 Days Voyage", author: "Alexei Borodin"}}/>
+          <Card card={ {id: 4,name: "Architecturals", author: "Samantha Brooke"}}/>
         </section>
         <section className="container home-feature-card-container">
           <FeatureCard card={{ id: 1, title: '100% Responsive', desc: "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.", img: `${responsive}`, alt: "different type of devices " }} />

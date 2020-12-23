@@ -16,16 +16,16 @@ function Nav({list}) {
           <div className="line-bottom"></div>
         </div>
         <ul className='nav-links-wrapper'>
-          <li><a href={`/${list.stories}`}>{ list.stories }</a></li>
-          <li><a href={`/${list.features}`}>{ list.features }</a></li>
-          <li><a href={`/${list.pricing}`}>{list.pricing}</a></li>
+          <li><a href={`/${list.firstLink === 'home' ? "" : list.firstLink}`}>{ list.firstLink }</a></li>
+          <li><a href={`/${list.secondLink}`}>{ list.secondLink }</a></li>
+          <li><a href={`/${list.thirdLink}`}>{list.thirdLink}</a></li>
         </ul>
         <li className="invite-button"><a>GET AN INVITE</a></li>
       </nav>
       <ul className={`nav-container nav-links-mobile-wrapper translate-${transform}`}>
-        <li><a href={`/${list.stories}`}>{ list.stories }</a></li>
-        <li><a href={`/${list.features}`}>{ list.features }</a></li>
-        <li><a href={`/${list.pricing}`}>{ list.pricing }</a></li>
+        <li><a href={`/${list.firstLink === 'home' ? "" : list.firstLink}`}>{ list.firstLink }</a></li>
+        <li><a href={`/${list.secondLink}`}>{ list.secondLink }</a></li>
+        <li><a href={`/${list.thirdLink}`}>{ list.thirdLink }</a></li>
         <span className="line"></span>
         <li className="invite-button"><a>GET AN INVITE</a></li>
       </ul>
