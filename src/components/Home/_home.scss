@@ -101,6 +101,14 @@
   }
 }
 
+.home-feature-card-container {
+  display: grid;
+  grid-row-gap: 40px;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .hero {
@@ -203,6 +211,10 @@
   .home-card-container {
     grid-template-columns: repeat(4, 1fr);
   }
+  .home-feature-card-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+  }
 }
 
 // For ipads
@@ -212,5 +224,8 @@
   }
   .home-card-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .home-feature-card-container {
+    grid-template-columns: none;
   }
 }
