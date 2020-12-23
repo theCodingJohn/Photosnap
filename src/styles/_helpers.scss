@@ -3,7 +3,8 @@
   padding: 0 24px;
 }
 
-.nav-container {
+.nav-container,
+.footer-container {
   @extend .container;
 }
 
@@ -11,7 +12,8 @@
   .container {
     padding: 0 65px;
   }
-  .nav-container {
+  .nav-container,
+  .footer-container {
     padding: 0 50px;
   }
 }
@@ -20,7 +22,8 @@
   .container {
     padding: 0 80px;
   }
-  .nav-container {
+  .nav-container,
+  .footer-container {
     padding: 0 155px;
   }
 }
