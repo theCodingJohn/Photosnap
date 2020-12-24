@@ -1,0 +1,29 @@
+.feature-hero-image {
+  background: url(/src/assets/features/mobile/hero.jpg) no-repeat center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .features {
+    .hero {
+      height: 480px;
+    }
+    .hero-desc-wrapper-1 {
+      &::after {
+        height: 160px;
+      }
+    }
+  }
+  .feature-hero-image {
+    background: url(/src/assets/features/tablet/hero.jpg) no-repeat left;
+    background-size: cover;
+    order: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .feature-hero-image {
+    background: url(/src/assets/features/desktop/hero.jpg) no-repeat left;
+    background-size: cover;
+  }
+}

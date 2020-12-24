@@ -101,7 +101,7 @@
   }
 }
 
-.home-feature-card-container {
+.feature-card-container {
   display: grid;
   grid-row-gap: 40px;
   justify-content: center;
@@ -211,7 +211,7 @@
   .card-container {
     grid-template-columns: repeat(4, 1fr);
   }
-  .home-feature-card-container {
+  .feature-card-container {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
   }
@@ -225,7 +225,7 @@
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .home-feature-card-container {
+  .feature-card-container {
     grid-template-columns: none;
   }
 }

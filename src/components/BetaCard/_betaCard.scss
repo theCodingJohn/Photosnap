@@ -1,0 +1,60 @@
+.beta {
+  @include flex();
+  position: relative;
+  color: $white;
+  height: 288px;
+  background: url(/src/assets/shared/mobile/bg-beta.jpg) no-repeat center;
+  background-size: cover;
+  h2 {
+    max-width: 440px;
+  }
+  a {
+    font-weight: 800;
+    margin-top: 15px;
+    color: $white;
+    &::after {
+      background: url(/src/assets/shared/desktop/arrow-white.svg);
+    }
+    &::before {
+      background: $white;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 6px;
+    background: $primary-color;
+    top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .beta {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background: url(/src/assets/shared/tablet/bg-beta.jpg) no-repeat center;
+    background-size: cover;
+    a {
+      margin-top: 0;
+      margin-right: 80px;
+    }
+    &::after {
+      left: 0;
+      width: 6px;
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .beta {
+    background: url(/src/assets/shared/desktop/bg-beta.jpg) no-repeat center;
+    background-size: cover;
+    h2 {
+      max-width: 100%;
+    }
+  }
+}
