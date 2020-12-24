@@ -483,7 +483,7 @@ li:hover a::after, li:hover .card-hero-desc-wrapper p:first-child::after, .card-
   background: url(/src/assets/shared/desktop/arrow.svg);
 }
 
-.home-feature-card-container {
+.feature-card-container {
   display: -ms-grid;
   display: grid;
   grid-row-gap: 40px;
@@ -590,7 +590,7 @@ li:hover a::after, li:hover .card-hero-desc-wrapper p:first-child::after, .card-
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
-  .home-feature-card-container {
+  .feature-card-container {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
@@ -605,7 +605,7 @@ li:hover a::after, li:hover .card-hero-desc-wrapper p:first-child::after, .card-
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .home-feature-card-container {
+  .feature-card-container {
     -ms-grid-columns: none;
         grid-template-columns: none;
   }
@@ -1252,6 +1252,118 @@ li:hover a::after, li:hover .card-hero-desc-wrapper p:first-child::after, .card-
 @media only screen and (min-device-width: 993px) and (max-device-width: 1168px) {
   .card-hero-desc-wrapper {
     width: 70%;
+  }
+}
+
+.feature-hero-image {
+  background: url(/src/assets/features/mobile/hero.jpg) no-repeat center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .features .hero {
+    height: 480px;
+  }
+  .features .hero-desc-wrapper-1::after {
+    height: 160px;
+  }
+  .feature-hero-image {
+    background: url(/src/assets/features/tablet/hero.jpg) no-repeat left;
+    background-size: cover;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .feature-hero-image {
+    background: url(/src/assets/features/desktop/hero.jpg) no-repeat left;
+    background-size: cover;
+  }
+}
+
+.beta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  color: #fff;
+  height: 288px;
+  background: url(/src/assets/shared/mobile/bg-beta.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.beta h2 {
+  max-width: 440px;
+}
+
+.beta a, .beta .card-hero-desc-wrapper p:first-child, .card-hero-desc-wrapper .beta p:first-child {
+  font-weight: 800;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.beta a::after, .beta .card-hero-desc-wrapper p:first-child::after, .card-hero-desc-wrapper .beta p:first-child::after {
+  background: url(/src/assets/shared/desktop/arrow-white.svg);
+}
+
+.beta a::before, .beta .card-hero-desc-wrapper p:first-child::before, .card-hero-desc-wrapper .beta p:first-child::before {
+  background: #fff;
+}
+
+.beta::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 6px;
+  background: linear-gradient(26.57deg, #ffc593 0.42%, #bc7198 43.46%, #5a77ff 83.33%);
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .beta {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: url(/src/assets/shared/tablet/bg-beta.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .beta a, .beta .card-hero-desc-wrapper p:first-child, .card-hero-desc-wrapper .beta p:first-child {
+    margin-top: 0;
+    margin-right: 80px;
+  }
+  .beta::after {
+    left: 0;
+    width: 6px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .beta {
+    background: url(/src/assets/shared/desktop/bg-beta.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .beta h2 {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=App.css.map */
