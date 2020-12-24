@@ -1,0 +1,83 @@
+.card-hero {
+  height: 770px;
+  a {
+    color: $white;
+    &::after {
+      background: url(/src/assets/shared/desktop/arrow-white.svg);
+    }
+    &::before {
+      background: $white;
+    }
+  }
+}
+
+.card-hero-image {
+  height: 320px;
+  background: url(/src/assets/stories/mobile/moon-of-appalacia.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+
+.card-hero-desc-wrapper {
+  height: 450px;
+  background-color: $black;
+  color: $white;
+  p:first-child {
+    @extend a;
+    display: none;
+    opacity: 1;
+    margin: 0 0 18px 0;
+  }
+  .date {
+    font-size: 13px;
+    margin: 15px 0 5px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-hero {
+    display: block;
+    height: 650px;
+    position: relative;
+  }
+
+  .card-hero-image {
+    background: url(/src/assets/stories/tablet/moon-of-appalacia.jpg) no-repeat
+      center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-hero-desc-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 70%;
+    background: transparent;
+    p:first-child {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .card-hero-image {
+    background: url(/src/assets/stories/desktop/moon-of-appalacia.jpg) no-repeat
+      center;
+    background-size: cover;
+  }
+
+  .card-hero-desc-wrapper {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-device-width: 993px) and (max-device-width: 1168px) {
+  .card-hero-desc-wrapper {
+    width: 70%;
+  }
+}

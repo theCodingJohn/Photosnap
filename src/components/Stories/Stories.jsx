@@ -7,6 +7,16 @@ function Stories() {
     <> 
       <Nav list={{firstLink: 'home', secondLink: 'features', thirdLink: 'pricing'}}/>
       <main>
+        <section className="hero card-hero">
+          <div className="hero-image card-hero-image"></div>
+          <div className="container hero-desc-wrapper card-hero-desc-wrapper">
+            <p>LAST MONTH'S FEATURED STORY</p>
+            <h1>HAZY FULL<br/>MOON OF<br/>APPALACHIA</h1>
+            <p className="date">March 2nd 2020 <span className="author">by John Appleseed</span></p>
+            <p>The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains," especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.</p>
+            <a className="arrow" href="/">GET AN INVITE</a>
+          </div>
+        </section>
         <section className="card-container">
           <Card card={ {id: 1,name: "The Mountains", author: "John Appleseed", date: "April 16th 2020"}}/>
           <Card card={ {id: 2,name: "Sunset Cityscapes", author: "Benjamin Cruz", date: "April 14th 2020"}}/>
