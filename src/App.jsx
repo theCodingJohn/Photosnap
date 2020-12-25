@@ -8,6 +8,7 @@ import {
 import Home from "./components/Home/Home";
 import Stories from "./components/Stories/Stories";
 import Features from "./components/Features/Features";
+import Pricing from "./components/Pricing/Pricing";
 import Footer from "./components/Footer/Footer";
 
 
@@ -21,6 +22,8 @@ function App() {
           <Route exact path="/stories" component={Stories}>
           </Route>
           <Route exact path="/features" component={Features}>
+          </Route>
+          <Route exact path="/pricing" component={Pricing}>
           </Route>
       </Switch>
       </Router>

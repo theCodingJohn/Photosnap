@@ -1,0 +1,23 @@
+.pricing-hero-image {
+  background: url(/src/assets/pricing/mobile/hero.jpg) no-repeat center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .pricing {
+    @extend .features;
+  }
+
+  .pricing-hero-image {
+    background: url(/src/assets/pricing/tablet/hero.jpg) no-repeat center;
+    background-size: cover;
+    order: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .pricing-hero-image {
+    background: url(/src/assets/pricing/desktop/hero.jpg) no-repeat center;
+    background-size: cover;
+  }
+}
