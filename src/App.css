@@ -1261,10 +1261,10 @@ li:hover a::after, li:hover .card-hero-desc-wrapper p:first-child::after, .card-
 }
 
 @media (min-width: 768px) {
-  .features .hero {
+  .features .hero, .pricing .hero {
     height: 480px;
   }
-  .features .hero-desc-wrapper-1::after {
+  .features .hero-desc-wrapper-1::after, .pricing .hero-desc-wrapper-1::after {
     height: 160px;
   }
   .feature-hero-image {
@@ -1364,6 +1364,28 @@ li:hover a::after, li:hover .card-hero-desc-wrapper p:first-child::after, .card-
   }
   .beta h2 {
     max-width: 100%;
+  }
+}
+
+.pricing-hero-image {
+  background: url(/src/assets/pricing/mobile/hero.jpg) no-repeat center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .pricing-hero-image {
+    background: url(/src/assets/pricing/tablet/hero.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .pricing-hero-image {
+    background: url(/src/assets/pricing/desktop/hero.jpg) no-repeat center;
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=App.css.map */
