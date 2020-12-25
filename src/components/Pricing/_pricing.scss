@@ -1,6 +1,61 @@
+.pricing {
+  .on {
+    .yearly {
+      font-weight: 800;
+    }
+    .price-toggler {
+      background: $black;
+      transition: all $speed;
+    }
+    .circle {
+      transform: translateX(50px);
+      background: $white;
+      transition: all $speed;
+    }
+  }
+  .off {
+    .monthly {
+      font-weight: 800;
+    }
+    .price-toggler {
+      background: $gray;
+      transition: all $speed;
+    }
+    .circle {
+      transform: translateX(0px);
+      transition: all $speed;
+    }
+  }
+}
+
 .pricing-hero-image {
   background: url(/src/assets/pricing/mobile/hero.jpg) no-repeat center;
   background-size: cover;
+}
+
+.price-toggler-wrapper {
+  @include flex($flow: row, $align: center, $justify: space-around);
+  width: 100%;
+  max-width: 360px;
+  h2 {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+}
+
+.price-toggler {
+  cursor: pointer;
+  background-color: $gray;
+  border-radius: 100px;
+  width: 92px;
+  height: 42px;
+  .circle {
+    background-color: $black;
+    border-radius: 100%;
+    height: 42px;
+    width: 42px;
+  }
 }
 
 @media (min-width: 768px) {
