@@ -1,0 +1,165 @@
+.pricing-card {
+  @include flex($align: center);
+  position: relative;
+  width: 100%;
+  height: 402px;
+  padding: 0 15px;
+  text-align: center;
+  background-color: $gray;
+  h2 {
+    font-size: 40px;
+    margin: 0 0 10px 0;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    margin: 20px 0;
+    opacity: 0.6;
+  }
+  .frequency {
+    margin-bottom: 20px;
+  }
+  .pick-plan-button {
+    @extend .invite-button;
+    font-weight: 800;
+    min-width: 200px;
+    max-width: 270px;
+  }
+}
+
+.Pro {
+  position: relative;
+  background-color: $black;
+  color: $white;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 6px;
+    width: 100%;
+    background: $primary-color;
+  }
+  .pick-plan-button {
+    color: $black;
+    background-color: $white;
+  }
+  .pick-plan-button-Pro:hover {
+    background-color: rgba($color: $gray, $alpha: 0.9);
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 270px;
+    text-align: left;
+    padding: 0 40px;
+    h2 {
+      grid-column: 4;
+      grid-row: 1;
+      margin: 0;
+      text-align: right;
+      align-self: flex-end;
+    }
+
+    p {
+      grid-column: 1 / span 2;
+      grid-row: 2;
+      margin: 0;
+    }
+
+    .frequency {
+      grid-row: 2;
+      grid-column: 4;
+      margin: 0;
+      text-align: right;
+      align-self: flex-start;
+    }
+
+    .pick-plan-button {
+      grid-row: 3;
+    }
+
+    &::after {
+      height: 100%;
+      width: 6px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .pricing-card {
+    display: flex;
+    height: 407px;
+    max-width: 350px;
+    text-align: center;
+    h2 {
+      margin: 0 0 10px 0;
+      align-self: center;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+
+    .frequency {
+      margin-bottom: 20px;
+      align-self: center;
+    }
+
+    &::after {
+      width: 100%;
+      height: 6px;
+    }
+  }
+
+  .Pro {
+    height: 470px;
+  }
+}
+
+// For ipads
+@media only screen and (min-device-width: 993px) and (max-device-width: 1168px) {
+  .pricing-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 270px;
+    text-align: left;
+    padding: 0 40px;
+    max-width: 100%;
+    h2 {
+      grid-column: 4;
+      grid-row: 1;
+      margin: 0;
+      text-align: right;
+      align-self: flex-end;
+    }
+
+    p {
+      grid-column: 1 / span 2;
+      grid-row: 2;
+      margin: 0;
+    }
+
+    .frequency {
+      grid-row: 2;
+      grid-column: 4;
+      margin: 0;
+      text-align: right;
+      align-self: flex-start;
+    }
+
+    .pick-plan-button {
+      grid-row: 3;
+    }
+
+    &::after {
+      height: 100%;
+      width: 6px;
+    }
+  }
+}
