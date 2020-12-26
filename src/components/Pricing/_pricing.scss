@@ -1,6 +1,77 @@
+.pricing {
+  .on {
+    .yearly {
+      font-weight: 800;
+    }
+    .price-toggler {
+      background: $black;
+      transition: all $speed;
+    }
+    .circle {
+      transform: translateX(50px);
+      background: $white;
+      transition: all $speed;
+    }
+  }
+  .off {
+    .monthly {
+      font-weight: 800;
+    }
+    .price-toggler {
+      background: $gray;
+      transition: all $speed;
+    }
+    .circle {
+      transform: translateX(0px);
+      transition: all $speed;
+    }
+  }
+}
+
+.pricing-container {
+  @include flex($align: center);
+  padding-top: 64px;
+  padding-bottom: 64px;
+  .pricing-card-wrapper {
+    width: 100%;
+  }
+}
+
 .pricing-hero-image {
   background: url(/src/assets/pricing/mobile/hero.jpg) no-repeat center;
   background-size: cover;
+}
+
+.price-toggler-wrapper {
+  @include flex($flow: row, $align: center, $justify: space-around);
+  width: 100%;
+  max-width: 360px;
+  h2 {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+}
+
+.price-toggler {
+  cursor: pointer;
+  background-color: $gray;
+  border-radius: 100px;
+  width: 92px;
+  height: 42px;
+  .circle {
+    background-color: $black;
+    border-radius: 100%;
+    height: 42px;
+    width: 42px;
+  }
+}
+
+.pricing-card-wrapper {
+  display: grid;
+  margin-top: 32px;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
 }
 
 @media (min-width: 768px) {
@@ -19,5 +90,21 @@
   .pricing-hero-image {
     background: url(/src/assets/pricing/desktop/hero.jpg) no-repeat center;
     background-size: cover;
+  }
+
+  .pricing-card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    margin-top: 55px;
+    align-items: center;
+  }
+}
+
+// For ipads
+@media only screen and (min-device-width: 993px) and (max-device-width: 1168px) {
+  .pricing-card-wrapper {
+    display: grid;
+    margin-top: 32px;
+    grid-template-columns: 1fr;
   }
 }
