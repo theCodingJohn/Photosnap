@@ -1,4 +1,4 @@
-# Creative Agency
+# Photosnap
 
 ## Original Design
 
