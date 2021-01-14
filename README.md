@@ -1,6 +1,6 @@
 # Photosnap
 
-## Original Design
+## Design
 
 ![creative agency design](https://res.cloudinary.com/dz209s6jk/image/upload/v1599153644/Challenges/zvkqvpshdas9rtdkubkx.jpg)
 
