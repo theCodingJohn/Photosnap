@@ -1,10 +1,14 @@
 import React from 'react'
 import Nav from "../Nav/Nav";
 import Card from "../Card/Card";
+import {Helmet} from "react-helmet"
 
 function Stories() {
   return (
     <> 
+      <Helmet>
+        <title>Photosnap - Stories</title>
+      </Helmet>
       <Nav list={{firstLink: 'home', secondLink: 'features', thirdLink: 'pricing'}}/>
       <main>
         <section className="hero card-hero">

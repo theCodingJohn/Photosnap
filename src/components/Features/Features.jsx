@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from '../Nav/Nav';
 import FeatureCard from "../FeatureCard/FeatureCard";
 import BetaCard from "../BetaCard/BetaCard";
+import {Helmet} from "react-helmet"
 
 // images
 import responsive from "../../assets/features/desktop/responsive.svg";
@@ -14,6 +15,9 @@ import dragDrop from "../../assets/features/desktop/drag-drop.svg";
 function Features() {
   return (
     <>
+      <Helmet>
+        <title>Photosnap - Features</title>
+      </Helmet>
       <Nav list={{firstLink: 'home', secondLink: 'stories', thirdLink: 'pricing'}}/>
       <main className="features">
         <section className="hero hero-1">

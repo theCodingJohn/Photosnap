@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from '../Nav/Nav';
 import Card from "../Card/Card";
 import FeatureCard from "../FeatureCard/FeatureCard";
+import {Helmet} from 'react-helmet'
 
 // images
 import responsive from "../../assets/features/desktop/responsive.svg";
@@ -11,6 +12,9 @@ import embed from "../../assets/features/desktop/embed.svg";
 function Home() {
   return (
     <>
+    <Helmet>
+      <title>Photosnap - Home</title>
+    </Helmet>
     <Nav list={{firstLink: 'stories', secondLink: 'features', thirdLink: 'pricing'}}/>
     <main>
       <section className="hero hero-1">

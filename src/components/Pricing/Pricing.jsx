@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Nav from "../Nav/Nav";
 import PricingCard from "../PricingCard/PricingCard";
 import BetaCard from "../BetaCard/BetaCard";
+import { Helmet } from "react-helmet";
 
 
 function Pricing() {
@@ -31,6 +32,9 @@ function Pricing() {
   }
   return (
     <>
+      <Helmet>
+        <title>Photosnap - Pricing</title>
+      </Helmet>
       <Nav list={{firstLink: 'home', secondLink: 'stories', thirdLink: 'features'}}/>
       <main className="pricing">
         <section className="hero hero-1">

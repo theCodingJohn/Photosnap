@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
 function Nav({list}) {
   const [status, setStatus] = useState('close');
