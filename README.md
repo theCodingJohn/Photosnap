@@ -21,20 +21,18 @@ The user should be able to:
 
 ![creative agency design](https://res.cloudinary.com/dz209s6jk/image/upload/v1599153644/Challenges/zvkqvpshdas9rtdkubkx.jpg)
 
-## Build Setup
-
-```bash
-# Install dependencies
-$ yarn install
-
-# Runs the app in the development mode.
-$ yarn start
-
-# Launches the test runner in the interactive watch mode.
-$ yarn test
-
-# Builds the app for production to the build folder.
-$ yarn build
+## Installation
+1. Clone the repo
+```sh
+git clone https://github.com/theCodingJohn/Photosnap.git
+```
+2. Install dependencies
+```sh
+yarn install
+```
+3. Start the project
+```sh
+yarn start
 ```
 
 ## Authors
