@@ -1,11 +1,16 @@
 # Photosnap
-It is one of the challenges in frontendmentor.io. The challenge is to build out this page and get it looking as close to the design as possible.    
 
-The user should be able to:    
+![creative agency design](./md_assets/photosnap.gif)
+
+It is one of the challenges in frontendmentor.io. The challenge is to build out this page and get it looking as close to the design as possible.
+
+The user should be able to:
+
 - View the optimal layout for each page depending on their device's screen size
 - See hover states for all interactive elements throughout the site
 
 ## Languages and Tools
+
 - React
 - Javascript
 - Scss
@@ -33,5 +38,5 @@ $ yarn build
 ```
 
 ## Authors
-- [John Carlo Cunanan](https://github.com/theCodingJohn)
 
+- [John Carlo Cunanan](https://github.com/theCodingJohn)
