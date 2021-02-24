@@ -53,9 +53,15 @@ function Pricing() {
             <h2 className="yearly">Yearly</h2>
           </div>
           <div className="pricing-card-wrapper">
-            <PricingCard card={{ role: 'Basic', desc: 'Includes basic usage of our platform. Recommended for new and aspiring photographers.', price: price.basic, frequency: frequency }} />
-            <PricingCard card={{ role: 'Pro', desc: "More advanced features available. Recommended for photography veterans and professionals.", price: price.pro, frequency: frequency }} />
-            <PricingCard card={{ role: 'Business', desc: 'Additional features available such as more detailed metrics. Recommended for business owners.', price: price.business, frequency: frequency}}/>
+            <div>
+              <PricingCard card={{ role: 'Basic', desc: 'Includes basic usage of our platform. Recommended for new and aspiring photographers.', price: price.basic, frequency: frequency }} />
+            </div>
+            <div>
+              <PricingCard card={{ role: 'Pro', desc: "More advanced features available. Recommended for photography veterans and professionals.", price: price.pro, frequency: frequency }} />
+            </div>
+            <div>
+              <PricingCard card={{ role: 'Business', desc: 'Additional features available such as more detailed metrics. Recommended for business owners.', price: price.business, frequency: frequency}}/>
+            </div>
           </div>
         </section>
         <BetaCard/>

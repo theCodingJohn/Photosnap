@@ -1,9 +1,9 @@
 header {
   position: fixed;
-  height: 72px;
+  height: 4.5rem;
   top: 0;
   width: 100%;
-  box-shadow: 0px 2px 14px -13px $black;
+  box-shadow: 0px 0.125rem 0.875rem -0.813rem $black;
   z-index: 99;
 }
 
@@ -20,8 +20,8 @@ header {
 .menu-button {
   position: relative;
   cursor: pointer;
-  width: 28px;
-  height: 24px;
+  width: 1.75rem;
+  height: 1.5rem;
   .line-top,
   .line-bottom {
     position: absolute;
@@ -47,7 +47,7 @@ header {
   position: absolute;
   left: 0;
   transform: translateY(-220px);
-  height: 220px;
+  height: 13.75rem;
   width: 100%;
   z-index: -1;
   background-color: $white;
@@ -62,13 +62,13 @@ header {
 
 li {
   text-transform: uppercase;
-  margin: 11px 0;
+  margin: 0.688rem 0;
   list-style: none;
   a {
     position: relative;
     color: inherit;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 0.938rem;
     &::after {
       @include underline($color: $primary-color);
     }
@@ -82,9 +82,9 @@ li {
   @include flex($align: center);
   cursor: pointer;
   width: 100%;
-  height: 40px;
+  height: 2.5rem;
   color: $white;
-  border-radius: 3px;
+  border-radius: 0.188rem;
   background-color: $black;
   transition: background-color $speed;
   &:hover a::after {
@@ -110,13 +110,13 @@ li {
 
 .open {
   .line-top {
-    transform: translateY(-5px) rotateZ(45deg);
+    transform: translateY(-0.313rem) rotateZ(45deg);
     transform-origin: top left;
     transition: transform $speed;
   }
   .line-bottom {
     @extend .line-top;
-    transform: translateY(5px) rotateZ(-45deg);
+    transform: translateY(0.313rem) rotateZ(-45deg);
     transform-origin: bottom left;
   }
 }
@@ -136,8 +136,8 @@ li {
     align-items: center;
     .invite-button {
       @include flex($flow: row, $align: center);
-      width: 158px;
-      min-width: 158px;
+      width: 9.875rem;
+      min-width: 9.875rem;
     }
   }
 
@@ -146,9 +146,9 @@ li {
   }
 
   li {
-    margin: 0 11px;
+    margin: 0 0.688rem;
     a {
-      font-size: 13px;
+      font-size: 0.813rem;
     }
   }
 

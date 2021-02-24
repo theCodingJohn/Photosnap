@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  padding: 0 24px;
+  padding: 0 1.5rem;
 }
 
 .nav-container,
@@ -10,20 +10,20 @@
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 65px;
+    padding: 0 4.063rem;
   }
   .nav-container,
   .footer-container {
-    padding: 0 50px;
+    padding: 0 3.125rem;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    padding: 0 80px;
+    padding: 0 5rem;
   }
   .nav-container,
   .footer-container {
-    padding: 0 155px;
+    padding: 0 9.688rem;
   }
 }

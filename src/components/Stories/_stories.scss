@@ -1,5 +1,5 @@
 .card-hero {
-  height: 770px;
+  height: 48.125rem;
   a {
     color: $white;
     &::after {
@@ -12,32 +12,32 @@
 }
 
 .card-hero-image {
-  height: 320px;
+  height: 20rem;
   background: url(/src/assets/stories/mobile/moon-of-appalacia.jpg) no-repeat
     center;
   background-size: cover;
 }
 
 .card-hero-desc-wrapper {
-  height: 450px;
+  height: 28.125rem;
   background-color: $black;
   color: $white;
   p:first-child {
     @extend a;
     display: none;
     opacity: 1;
-    margin: 0 0 18px 0;
+    margin: 0 0 1.125rem 0;
   }
   .date {
-    font-size: 13px;
-    margin: 15px 0 5px 0;
+    font-size: 0.813rem;
+    margin: 0.938rem 0 0.313rem 0;
   }
 }
 
 @media (min-width: 768px) {
   .card-hero {
     display: block;
-    height: 650px;
+    height: 40.625rem;
     position: relative;
   }
 

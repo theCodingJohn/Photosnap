@@ -6,11 +6,11 @@
 @media (min-width: 768px) {
   .features {
     .hero {
-      height: 480px;
+      height: 30rem;
     }
     .hero-desc-wrapper-1 {
       &::after {
-        height: 160px;
+        height: 10rem;
       }
     }
   }

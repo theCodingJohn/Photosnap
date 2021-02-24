@@ -1,26 +1,26 @@
 .main-footer {
   @include flex($flow: column, $align: center, $justify: center);
   background: $black;
-  height: 539px;
-  padding: 40px;
+  height: 33.688rem;
+  padding: 2.5rem;
   color: $white;
   text-align: center;
   a {
     color: inherit;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .footer-logo {
     margin: auto auto 0 auto;
   }
   .arrow {
-    margin: 0 auto 30px auto;
-    padding-right: 60px;
+    margin: 0 auto 1.875rem auto;
+    padding-right: 3.75rem;
     &::before {
       background: none;
     }
     &::after {
       background: url(/src/assets/shared/desktop/arrow-white.svg);
-      margin-right: 25px;
+      margin-right: 1.563rem;
     }
   }
   p {
@@ -31,16 +31,16 @@
 
 .social-links-wrapper {
   @include flex($flow: row, $align: center, $justify: space-between);
-  margin: 30px auto 40px auto;
-  width: 170px;
-  height: 21px;
+  margin: 1.875rem auto 2.5rem auto;
+  width: 10.625rem;
+  height: 1.313rem;
 }
 
 .social-icon {
   display: inline-block;
   margin: auto auto 0 auto;
-  width: 21px;
-  height: 21px;
+  width: 1.313rem;
+  height: 1.313rem;
   cursor: pointer;
 }
 
@@ -112,14 +112,14 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    height: 284px;
+    height: 17.75rem;
     .footer-logo {
       grid-row: 1 / span 1;
       margin: 0;
     }
     .arrow {
       text-align: right;
-      margin: 0 67px 0 0;
+      margin: 0 4.188rem 0 0;
       padding: 0;
       grid-column: 4 / span 2;
     }
@@ -150,13 +150,13 @@
 
 @media (min-width: 992px) {
   .main-footer {
-    padding: 40px 155px;
-    height: 250px;
+    padding: 2.5rem 9.688rem;
+    height: 15.625rem;
   }
   .footer-links-wrapper {
     @include flex($justify: space-around);
-    margin-left: 52px;
-    padding: 10px 0;
+    margin-left: 3.25rem;
+    padding: 0.625rem 0;
     height: 100%;
     grid-row: 1 / span 3;
     grid-column: 2 / span 1;

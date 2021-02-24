@@ -1,11 +1,11 @@
 .feature-card {
   @include flex($align: center, $justify: flex-end);
   width: 100%;
-  max-width: 457px;
-  height: 235px;
+  max-width: 28.563rem;
+  height: 14.688rem;
   text-align: center;
   h3 {
-    margin: 40px 0 20px 0;
+    margin: 2.5rem 0 1.25rem 0;
   }
   p {
     opacity: 0.6;
@@ -14,6 +14,6 @@
 
 @media (min-width: 992px) {
   .feature-card {
-    max-width: 345px;
+    max-width: 21.563rem;
   }
 }
