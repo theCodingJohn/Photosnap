@@ -1,0 +1,120 @@
+.pricing_features {
+  text-transform: uppercase;
+  max-width: 28.125rem;
+  margin: auto;
+  padding-bottom: 4rem;
+
+  h5 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    margin: 1.469rem 0 1rem;
+  }
+
+  .table_head {
+    height: 2.469rem;
+    border-bottom: 1px solid $black;
+    margin-bottom: 1.469rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+
+    .tier_wrapper {
+      display: none;
+    }
+  }
+
+  .check_wrapper {
+    display: none;
+  }
+
+  .tier_card_wrapper {
+    display: flex;
+    height: 3.969rem;
+    border-bottom: 1px solid $gray;
+    margin-top: 1.469rem;
+  }
+
+  .tier_card {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4.25rem;
+  }
+
+  .tier {
+    font-size: 0.625rem;
+    letter-spacing: 0.104rem;
+    font-weight: 700;
+    color: rgba($color: $black, $alpha: 0.5);
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing_features {
+    max-width: 34.375rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .pricing_features {
+    max-width: 45.688rem;
+    padding-right: 0;
+    padding-left: 0;
+
+    .row {
+      border-bottom: 1px solid $gray;
+    }
+
+    .table_head {
+      border-bottom: 1px solid $black;
+      margin-bottom: 0;
+    }
+
+    .table_head_text {
+      display: flex;
+
+      h4 {
+        flex-basis: 55%;
+      }
+
+      .tier_wrapper {
+        display: flex;
+        flex-basis: 45%;
+        width: 100%;
+        justify-content: center;
+
+        span {
+          width: 33.33%;
+          text-align: center;
+        }
+      }
+    }
+
+    .features_wrapper {
+      display: flex;
+
+      h5 {
+        flex-basis: 55%;
+        margin-right: 0;
+      }
+
+      .check_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 45%;
+        width: 100%;
+
+        span {
+          width: 33.33%;
+          text-align: center;
+        }
+      }
+    }
+
+    .tier_card_wrapper {
+      display: none;
+    }
+  }
+}
